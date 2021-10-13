@@ -15,15 +15,17 @@ class UUID(types.TypeDecorator):
     """
     impl = MSBinary
 
-    def __init__(self, length=16):
+    def __init__(self):
         self.impl.length = 16
         types.TypeDecorator.__init__(self, length=self.impl.length)
 
     def process_bind_param(self, value, dialect=None):
         if value and isinstance(value, uuid.UUID):
             return value.bytes
-        elif value and not isinstance(value, uuid.UUID):
-            raise ValueError('value %s is not a valid uuid.UUID' % value)
+        elif value and isinstance(value, basestring):
+            return uuid.UUID(value).bytes
+        elif value:
+            raise ValueError('value %s is not a valid uuid.UUId' % value)
         else:
             return None
 
