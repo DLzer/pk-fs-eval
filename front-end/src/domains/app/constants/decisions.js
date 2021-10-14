@@ -1,0 +1,1 @@
+export const DECISIONS = ["", "approved", "denied"];
