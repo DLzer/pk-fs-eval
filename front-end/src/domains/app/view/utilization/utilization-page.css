@@ -1,0 +1,48 @@
+.container {
+    padding: 30px;
+    font-family: Helvetica;
+}
+
+th, td {
+    width: 300px;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background: lightgray;
+}
+
+.profile_title {
+    color: #5368F5;
+}
+
+.benefits_title {
+    color: #5368F5;
+}
+
+.benefits_name {
+    background: none;
+}
+
+.routingLink {
+    width: 150px;
+    height: 42px;
+    margin: 0;
+    color: #373F51;
+    border: none;
+    background-color: #FEE300;
+    cursor: pointer;
+    font-size: 17px;
+}
+.routingLink a {
+    text-decoration: none;
+}
+.routingLink:hover {
+    background-color: #5368F5;
+}
+.routingLink:hover a {
+    color: #FEFEFE;
+}
+
+  

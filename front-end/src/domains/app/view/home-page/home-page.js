@@ -74,20 +74,17 @@ export default function HomePage() {
 
     return (
         <div className={styles.container}>
-            <p>Customer: Paige Davenport</p>
-            <p>PKN690800</p>
-            <p>Claim: {claims.id}</p>
+            <h1 className={styles.profile_title}>Paige Davenport</h1>
+            <p><b>Customer ID:</b> PKN690800</p>
+            <p><b>Claim Number:</b> {claims.id}</p>
 
-            <Link to="/utilization">Plan Utilization</Link>
+            <button className={styles.decorative_button}><Link to="/utilization">Plan Utilization</Link></button>
             <hr />
 
-            <p><b>Claim Type:</b></p>
-            <p>{claims.claim_type}</p>
+            <p><b>Claim Type:</b> {claims.claim_type}</p>
+            <p><b>Claimed Amount:</b> {claims.amount_claimed}</p>
 
-            <p><b>Claimed Amount:</b></p>
-            <p>{claims.amount_claimed}</p>
-
-            <p style={{ marginTop: '80px' }}><b>Line Items:</b></p>
+            <p><b>Claim Line Items</b></p>
             <table>
                 <thead>
                     <tr>
@@ -124,7 +121,7 @@ export default function HomePage() {
                 )) : null}
                 </tbody>
             </table>
-            <button onClick={saveData}>Save</button>
+            <button className={styles.decorative_button} onClick={saveData}>Save</button>
         </div>
     );
 }

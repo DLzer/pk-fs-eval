@@ -12,3 +12,39 @@ th, td {
 th {
     background: lightgray;
 }
+
+.profile_title {
+    color: #5368F5;
+}
+
+.benefits_title {
+    color: #5368F5;
+}
+
+.benefits_name {
+    background: none;
+}
+
+.decorative_button {
+    width: 150px;
+    height: 42px;
+    margin: 0;
+    color: #373F51;
+    border: none;
+    background-color: #FEE300;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+.decorative_button a {
+    text-decoration: none;
+}
+.decorative_button:hover {
+    background-color: #5368F5;
+    color: #FEFEFE;
+}
+.decorative_button:hover a {
+    color: #FEFEFE;
+}
+
+  

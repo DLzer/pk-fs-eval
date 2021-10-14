@@ -24,7 +24,7 @@ export default function UtilizationPage() {
                 <p><b>Weight: </b> 16 lbs</p>
             </div>
 
-            <Link to="/">Home</Link>
+            <button className={styles.routingLink}><Link to="/">Home</Link></button>
 
             <hr />
 
